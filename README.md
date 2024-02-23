@@ -1,9 +1,11 @@
- INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-
+## INTERFACING DIGITAL INPUT SENSOR WITH ARDUINO PUSH BUTTON
+## DATE :23-02-24
+## NAME :DINESH KUMAR M
+## ROLLNUMBER :212221220011
+## DEPARTMENT:INFORMATION TECHNOLOGY
 
-
-
-
-**AIM**:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
+**AIM**:  
+To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
 
 
 **COMPONENTS REQUIRED:**
@@ -66,7 +68,68 @@ CIRCUIT DIAGRAM
 
 
 
-**PROGRAM** 
+## PROGRAM 
+```
+
+int pot;
+
+int led=7;
+
+void setup()
+
+{
+
+  pinMode(led, OUTPUT);
+  
+  Serial.begin(9600);
+  
+}
+
+void loop()
+{
+  pot=analogRead(A0);
+  //Serial.print("Value=");
+  Serial.println(pot);
+  if(pot>900)
+  {
+  digitalWrite(led, HIGH);
+  delay(500); // Wait for 1000 millisecond(s)
+  digitalWrite(led, LOW);
+  delay(500);// Wait for 1000 millisecond(s)
+  }
+  else
+  {
+  
+  digitalWrite(led, LOW);
+  delay(500);
+  }
+    
+}
+```
+GRAPH 
+![exp2graph](https://github.com/dineshdk154/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/104413084/29168dac-db27-4056-9f64-093e54da96b0)
+
+
+**OUTPUT**
+FIG 1 CIRCUIT OFF
+![exp2off](https://github.com/dineshdk154/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/104413084/8e139348-d22e-45dc-a009-3bff6dccf291)
+
+FIG 2  CIRCUIT ON
+![exp2on](https://github.com/dineshdk154/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/104413084/178e5c94-7519-4bcb-a74b-53835443be30)
+
+FIG 3 SCHEMATIC DIAGRAM
+
+![exp2c](https://github.com/dineshdk154/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/104413084/14dda5bb-ed6f-4e61-9d8b-0f68778ab9f1)
+
+
+
+
+
+
+
+
+
+
  
 
 
@@ -77,12 +140,6 @@ CIRCUIT DIAGRAM
 
 
 
-**
-**Simulation output:** 
-**
-
-
-[My image](username.github.com/repository/img/image.jpg)
 
 
 
@@ -90,4 +147,10 @@ CIRCUIT DIAGRAM
 
 
 
-**RESULT: ** Arduino uno analog input functioning is learned and interfaced with digital input switch .
+
+
+
+
+**RESULT**: 
+
+ Arduino uno analog input functioning is learned and interfaced with digital input switch .
