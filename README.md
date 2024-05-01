@@ -1,5 +1,5 @@
-## INTERFACING ANALOG INPUT SENSOR POT WITH ARDUINO
-## DATE :23-02-24
+## EXP-2- INTERFACING ANALOG INPUT SENSOR POT WITH ARDUINO
+## DATE :04-03-24
 ## NAME :DINESH KUMAR M
 ## ROLLNUMBER :212221220011
 ## DEPARTMENT:INFORMATION TECHNOLOGY
@@ -124,37 +124,6 @@ FIG 2  CIRCUIT ON
 FIG 3 SCHEMATIC DIAGRAM
 
 ![exp2c](https://github.com/dineshdk154/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/104413084/14dda5bb-ed6f-4e61-9d8b-0f68778ab9f1)
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 **RESULT**: 
 
  Arduino uno analog input functioning is learned and interfaced with digital input switch .
